@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet')
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppi*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url("yellow.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the image and text */
+.image-container {
+    position: relative;
+    width: 300px; /* Set the width of the container */
+}
+
+/* Style the image */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style the text overlay */
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding for text */
+    text-align: center; /* Center-align text */
+    font-size: 16px; /* Text font size */
+}
+
+
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the container for the text */
+.text-on-right h1{
+    text-align: right; /* Align the text to the right */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+
+header {
+
+	position: fixed;
+	top: 0;
+	left: 0px;
+	width: 80%;
+	padding: 20px 100px;
+/*	background: red;*/
+	display : flex;
+	justify-content: space-between;
+	align-item : center ;
+	z-index : 99; 
+}
+
+
+
+
+/* Style the image with a class */
+.top-left-image {
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Place it at the top */
+    left: 0; /* Place it at the left */
+    width: 250px; /* Set the width to the desired size */
+    height: auto; /* Maintain the aspect ratio (auto-adjust height) */
+}
+
+
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.right-nav {
+    position: absolute; /* Position the navigation bar absolutely */
+    top: 0; /* Place it at the top */
+    right: 0; /* Place it at the extreme right */
+    background-color: #333; /* Background color for the navigation bar */
+}
+
+/* Style the navigation list and links */
+.right-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-nav li {
+    display: inline;
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: #fff; /* Text color for links */
+}
+
+/* Add styles for hover effect or other menu styles as needed */
+.right-nav a:hover {
+    text-decoration: underline;
+    color: #ff9900; /* Color on hover */
+}
+
+
+
+.logo {
+	font-size: 2em;
+	color: #fff;
+	user-select: none;
+}
+•
+
+.navigation a {
+	position: absolute;
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+}
+
+navigation a:: after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+
+
+ navigation a:hover::after {
+ 	transform-origin: left;
+    transform: scaleX(1);
+ }
+    
+
+
+
+
+
+.navigation .btnLogin-popup {
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid #fff;
+	outline: none;
+	border-radius: 6px;
+	cursor : pointer;
+	font-size : 1.1em;
+	color: #fff;
+/*	color: #162938;	*/
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+
+}
+
+
+.navigation .btnLogin-popup:hover {
+	background: #fff;
+	color: #162938;
+
+}
+
+
+	#text{
+
+		height: 25px;
+		border-radius: 5px;
+		padding: 4px;
+		border: solid thin #aaa;
+		width: 100%;
+	}
+
+	#button{
+
+		padding: 18px;
+		width: 503px;
+		margin-top: 40px;
+
+		color: black;
+		background-color: lightblue;
+		border: none;
+	}
+
+
+#box{
+
+		position: relative;
+		width: 500px;
+		height: 475px;
+		background: transparent;
+		border: 2px solid rgba(255, 255, 255, 0.5);
+		border-radius: 20px;
+		backdrop-filter: blur(20px);
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+/*		display: flex;*/
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		transform: scale(1.0);
+		transition: transform .5s ease, height .2s ease;
+	}
+
+.wrapper {
+	position: relative;
+	width: 500px;
+	height: 475px;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-items: center;*/
+	overflow: hidden;
+/*	transform: scale(1.0);*/
+/*	transition: transform .5s ease, height .2s ease;*/
+
+}
+
+.wrapper.active.popup {
+	transform: scale(1.0);
+
+}
+
+.wrapper.active {
+	height: 520px;
+
+}
+
+.wrapper .form-box.login {
+	transition: transform .18s ease;
+	transform: translateX(0);
+/*	display: none;*/
+}
+
+.wrapper.active .form-box.register {
+	transition: transform .18s ease;
+	transform: translateX(0);
+/*	transition: none;*/
+/*	display: none;*/
+}
+
+
+.wrapper.active .form-box.login {
+	transition: none;
+	transform: translateX(-400px);
+/*	display: none;*/
+}
+
+.wrapper .form-box.register {
+	position: absolute;
+	transform: translateX(400px);
+	transition: none;
+}
+
+
+.wrapper .form-box login. h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.wrapper .form-box register.input-box2 {
+	text-align: left;
+	transform: translateX(-400px);
+}
+
+.wrapper .icon-close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	background: #162938;
+	font-size: 2em;
+	color: #fff;
+	display: flex;
+/*	position: center;*/
+	align-items: center;
+	justify-content: center;
+	border-bottom-left-radius: 20px ;
+	cursor: pointer;
+	z-index: 1;
+
+}
+
+.wrapper .form-box {
+	width: 150%;
+	padding: 30 px;
+}
+
+
+.form-box .h2 {
+	font-size: 2em;
+	color: #162938;
+	text-align : center;
+
+}
+
+.input-box {
+	position: relative;
+	width: 100%;
+	height: 57px;
+
+	border-bottom: 0.2px solid #ffffff4a;
+	padding : 0px 0px 10px 1px;
+	margin: 30px 0 px;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+	top: -0.01px;
+}
+
+.input-box label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	font-size: 1.2em;
+	color: #d9eeff;
+	font-weight: 500;
+	pointer-events: none;
+
+}
+
+.input-box input{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 0 35px 0px 5px;
+
+}
+
+
+.input-box2 input{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1em;
+	color: #162938;
+	font-weight: 600;
+	padding: 0 35px 0px 5px;
+}
+
+
+.input-box .icon {
+	position: absolute;
+	right: 8px;
+	font-size: 1.2em;
+	color: #162938;
+	line-height: 57px;
+
+}
+
+
+.input-box2 .icon {
+	position: absolute;
+	right: 8px;
+	font-size: 1.2em;
+	color: #162938;
+	line-height: 57px;
+
+}
+
+
+.remember-forgot {
+	font-size: .9em;
+	color: #162938;
+	font-weight: 500;
+	margin: -15px 0 15px;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.remember-forgot label input{
+	accent-color: #162938;
+	margin-right: 3px;
+
+}
+
+.remember-forgot a {
+	color: #162938;
+	text-decoration: none;
+}
+
+.remember-forgot a:hover {
+	text-decoration: underline;
+}
+
+.btn {
+	width: 100%;
+	height: 45px;
+
+	background: #162938;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.3em;
+	color: #fff;
+	font-weight: 500;
+
+}
+
+.login-register {
+	font-size: 1.2em;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 500;
+	margin: 55px 0 10px;
+
+}
+
+.login-register p a{
+	color: #ff00e9;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.2em;
+
+}
+
+.login-register p a:hover {
+	text-decoration: underline;
+
+}
+
+
